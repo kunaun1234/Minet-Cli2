@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MinetHost : Admin</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 30px;">
+            <div class="container">
+                <a class="navbar-brand" href="#">MinetHost : Admin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+                        <li class="nav-item" style="margin-right: 5px;"><a class="nav-link" href="ma-customer.html">Customer</a></li>
+                        <li class="nav-item" style="margin-right: 5px;"><a class="nav-link" href="ma-ipaddress.html">IP Management</a></li>
+                        <li class="nav-item">
+                            <button class="btn btn-sm btn-outline-danger" style="margin-top: 4px;" type="button">Logout</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_ip">
+              <i class="fas fa-plus-circle"></i> Add IP 
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_class">
+              <i class="fas fa-plus-circle"></i> Add Class 
+            </button>
+
+            <hr>
+
+            <button type="button" class="btn btn-outline-secondary active" data-bs-toggle="modal" data-bs-target="#add_customer">
+              View Class 1 
+            </button>
+
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#add_customer">
+              View Class 2
+            </button>
+            # เมื่อกดเลือกปุ่ม View Class 1 หรือ 2 ให้ แสดง Table ของ Class นั้นๆ
+            <hr>
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th width="20%">IP Address</th>
+                  <th width="70%">Details</th>
+                  <th width="10%">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>103.174.190.1</td>
+                  <td>IP Reseved</td>
+                  <td>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#edit_customer"><i class="fas fa-edit"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#delete_customer"><i class="far fa-trash-alt"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>           
+        </div>
+
+            <!-- Add IP Modal -->
+            <div class="modal fade" id="add_ip" tabindex="-1" aria-labelledby="add_ip" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="add_ip">Add IP Address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="minet_ip" placeholder="IP Address">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="minet_ip_details" placeholder="Details">
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- Add Class Modal -->
+            <div class="modal fade" id="add_class" tabindex="-1" aria-labelledby="add_class" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="add_class">Add Class</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="minet_ip" placeholder="IP Class">
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
