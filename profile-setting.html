@@ -162,11 +162,148 @@
                                                 <img src="assets/demo/users/user1.jpg" alt="User Wall">
                                             </figure>
                                             <h6>Thanawit Tantrawat</h6><small>Please verify your account!</small>
-                                            <hr class="profile-seperator">
+                                            <hr>
                                             <div class="profile-user-description mb-4">
-                                                Email Address : <button class="btn btn-xs btn-outline-danger btn-rounded">Verify Now!</button><hr>
-                                                Phone Number : <button class="btn btn-xs btn-outline-success btn-rounded">Verified!</button><hr>
-                                                Thai ID Card : <button class="btn btn-xs btn-outline-danger btn-rounded">Verify Now!</button>
+                                                Profile : 
+                                                <a data-toggle="modal" data-target="#profile" class="btn btn-xs btn-outline-danger btn-rounded">Verify Now!</a><hr>
+                                                Email Address : 
+                                                <a data-toggle="modal" data-target="#ver-email" class="btn btn-xs btn-outline-danger btn-rounded">Verify Now!</a><hr>
+                                                Phone Number : 
+                                                <a data-toggle="modal" data-target="#phone"  class="btn btn-xs btn-outline-success btn-rounded">Verified!</a><hr>
+                                                ID Card / Passport : 
+                                                <a data-toggle="modal" data-target="#id-card" class="btn btn-xs btn-outline-danger btn-rounded">Verify Now!</a>
+
+                                                <!-- /.profile modal -->
+                                                <div id="profile" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="display: none">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                            <div class="modal-body">
+                                                                <div class="text-center my-3">Veriy Profile</div><hr>
+                                                                <form>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Full name">
+                                                                    </div>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Company">
+                                                                    </div>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Tax ID">
+                                                                    </div><hr>
+                                                                    <label for="emailaddress1">Contact Info</label>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Address">
+                                                                    </div>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="City">
+                                                                    </div>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Province">
+                                                                    </div>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Postal">
+                                                                    </div>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Country">
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group text-center">
+                                                                        <button class="btn btn-rounded btn-primary ripple" type="submit">Submit</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+                                                <!-- /.profile modal -->
+
+                                                <!-- /.email modal -->
+                                                <div id="ver-email" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="display: none">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                            <div class="modal-body">
+                                                                <div class="text-center my-3">Veriy Email Address</div><hr>
+                                                                <form>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <label for="emailaddress1">Email Address</label>
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="Email Address">
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group text-center">
+                                                                        <button class="btn btn-rounded btn-primary ripple" type="submit">Submit</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+                                                <!-- /.email modal -->
+
+                                                <!-- /.phone modal -->
+                                                <div id="phone" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="display: none">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                            <div class="modal-body">
+                                                                <div class="text-center my-3">OTP SMS</div><hr>
+                                                                <form>
+                                                                    <label for="phone">Phone number (+66 only)</label>
+                                                                    <div class="input-group">
+                                                                        <input class="form-control" id="l8" placeholder="Phone number" type="text"> <span class="input-group-append"><a class="btn btn-success" href="javascript: void(0);">Send OTP</a></span>
+                                                                    </div><hr>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <label for="phone">OTP Code : ADSX6D</label>
+                                                                        <input class="form-control" type="number" id="phone" required="" placeholder="OTP Number">
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group text-center">
+                                                                        <button class="btn btn-rounded btn-primary ripple" type="submit">Submit</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+                                                <!-- /.phone modal -->
+
+                                                <!-- /.idcard modal -->
+                                                <div id="id-card" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="display: none">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                            <div class="modal-body">
+                                                                <div class="text-center my-3">Veriy ID Card / Passport</div><hr>
+                                                                <form>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <label for="emailaddress1">ID Card Number</label>
+                                                                        <input class="form-control" type="number" id="idcard" required="" placeholder="ID Card Number">
+                                                                    </div>
+                                                                    <div class="form-group mr-b-10">
+                                                                        <label for="emailaddress1">Picture of your ID Card</label>
+                                                                        <input class="form-control" type="file" id="idcardpic" required="" placeholder="ID Card Number">
+                                                                    </div>
+                                                                    <img src="https://www.chem-ou.com/manage/uploads/2021/verify05.jpg">
+                                                                    <hr>
+                                                                    <div class="form-group text-center">
+                                                                        <button class="btn btn-rounded btn-primary ripple" type="submit">Submit</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+                                                <!-- /.idcard modal -->
+
+
                                             </div>
                                         </div>
                                     </div>
